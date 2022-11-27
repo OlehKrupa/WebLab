@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Secure"
+AuthUserFile /var/www/test.loc/.htpasswd
+require valid-user
