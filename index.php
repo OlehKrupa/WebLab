@@ -1,4 +1,4 @@
 <?php
 require_once "config.php";
-require_once TEMPLATES_PATH."index.html";
+require_once TEMPLATES_PATH."shop.html";
 ?>
