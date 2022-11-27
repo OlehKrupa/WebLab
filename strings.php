@@ -68,8 +68,8 @@ for ($i=0; $i < count($tmp); $i++){
 
 		if ($len==0){
 			//Если пробелов достаточно то запись в вывод
-			foreach ($row as $R){
-				$output = $output.$R;
+			foreach ($row as $r){
+				$output = $output.$r;
 			}	
 		}
 

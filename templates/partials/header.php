@@ -29,7 +29,7 @@
                         <li class="nav-item">
                             <select name="language" class="form-select" id="language">
                                 <?php
-                                foreach($mas as $V=>$v)
+                                foreach($mas as $key=>$v)
                                     echo "<option value='$v'>$v</option>";
                                 ?>
                             </select>
