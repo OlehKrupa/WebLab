@@ -16,14 +16,14 @@
     $login=[];
     $nonLogin=[];
 
-    foreach ($user as $U) {
-     $registered[] = ["email" => $U["email"], "password"=> $U["password"]];
+    foreach ($user as $u) {
+     $registered[] = ["email" => $u["email"], "password"=> $u["password"]];
  }
- foreach($registered as $R){
-     if (($loginEmail === $R["email"]) && ($loginPasswd === $R["password"])){
+ foreach($registered as $r){
+     if (($loginEmail === $r["email"]) && ($loginPasswd === $r["password"])){
         echo($loginEmail." logined");
 
-        $fileName = $R["email"].".json";
+        $fileName = $r["email"].".json";
         $data = file_get_contents($fileName);
         if (!$data)
         {
@@ -39,9 +39,9 @@
        file_put_contents($fileName, $data);
        return;
 
-   } elseif (($loginEmail === $R["email"]) &&($loginPasswd != $R["password"])){
+   } elseif (($loginEmail === $r["email"]) &&($loginPasswd != $r["password"])){
     echo($loginEmail." incorrect password");
-    $fileName = $R["email"].".json";
+    $fileName = $r["email"].".json";
     $data = file_get_contents($fileName);
     if (!$data)
     {
